@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
+
 import AddUser from './components/Users/AddUser';
 import UsersList from './components/Users/UsersList';
 
-export const App = (props) => {
+function App() {
   return (
     <div>
       <AddUser />
-      <UsersList users={[]}/>
+      <UsersList users={[]} />
     </div>
-  )
+  );
 }
-
 
 export default App;

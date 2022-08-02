@@ -9,12 +9,10 @@ const AddUser = (props) => {
   const [enteredAge, setEnteredAge] = useState('');
 
   const addUserHandler = (event) => {
-    //validate 1
     event.preventDefault();
     if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
       return;
     }
-    //validate 2
     if (+enteredAge < 1) {
       return;
     }
